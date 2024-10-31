@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" type="x-icon" href="https://i.ibb.co/SvYM2q7/netflix1.png">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+  <meta name="description"
+    content="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+    
+        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="clone.css" />
+  <script src="Netflix.js">
+  </script>
+</head>
+
+<body>
+  <script src="clone.js"></script>
+  <div class="main">
+    <!-- logo -->
+    <nav>
+      <span><img  width="148px" src="https://i.ibb.co/FJ2qWHL/netflix.png" alt="Netflix" /></span>
+      <!-- lang btn -->
+      <div >
+        <button id="english" class="btn" >
+          <svg  style="width: 27px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="white" d="M0 128C0 92.7 28.7 64 64 64l192 0 48 0 16 0 256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64l-256 0-16 0-48 0L64 448c-35.3 0-64-28.7-64-64L0 128zm320 0l0 256 256 0 0-256-256 0zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1 73.6 0 8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276l-38 0 19-42.8zM448 164c11 0 20 9 20 20l0 4 44 0 16 0c11 0 20 9 20 20s-9 20-20 20l-2 0-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45L448 228l-72 0c-11 0-20-9-20-20s9-20 20-20l52 0 0-4c0-11 9-20 20-20z"/></svg>
+          <select name="menuChoice" onchange="displayPage(this)"  >
+            <option>English</option>
+            <option value="hi.html">हिन्दी</option>
+          </select></button>
+           <!-- signin btn  -->
+       <a href="Signin.html"><button id="sign" class="btn red-sm" >Sign In</button></a>
+      </div>
+    </nav>
+    <!-- main bg -->
+    <div class="box concave-image"></div>
+    <div class="hero">
+      <span>Unlimited movies, TV shows and more</span>
+      <span>Starts at ₹149. Cancel at any time.</span>
+      <span>Ready to watch? Enter your email to create or restart your
+        membership.</span>
+      <div class="place">
+        <input type="text" id='emailAddress' placeholder="Email address" />
+        <a href="/signup.html">
+<!-------------------------------------------------- Onlick event------------------------------------>
+        <button class="btn btn-red" onclick='validateEmail()'>Get Started &gt;</button></a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- seperation -->
+  <div class="seperation">
+    <div>
+      <div>
+        <span>Trending Now</span>
+      </div>
+    </div>
+  </div>
+  <!-- top10 movies -->
+  <div class="Trending">
+    <div class="topmovie">
+      <span class="movie1"></span>
+      <span class="movie2"></span>
+      <span class="movie3"></span>
+      <span class="movie4"></span>
+      <span class="movie5"></span>
+      <span class="movie6"></span>
+      <span class="movie7"></span>
+      <span class="movie8"></span>
+      <span class="movie9"></span>
+      <span class="movie10"></span>
+    </div>
+    <div class="scroll"></div>
+  </div>
+  <div class="more">
+    <div class="moretext">More reasons to join</div>
+    <div class="moreflex">
+      <div class="more1">
+        <h2>Enjoy on your TV</h2>
+        <span>
+          <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </span>
+        <img src="https://i.ibb.co/VS0fhcW/tv.png">
+      </div>
+      <div class="more2">
+        <span>
+          <h2>Download your shows to watch offline</h2>
+        </span>
+        <span>
+          <p>Save your favourites easily and always have something to watch.</p>
+        </span>
+        <img src="https://i.ibb.co/hVcGmhf/download.png">
+      </div>
+      <div class="more3">
+        <h2>Watch everywhere</h2>
+        <span>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+        </span>
+        <img src="https://i.ibb.co/mF1m0K0/celebration.png">
+      </div>
+      <div class="more4">
+        <span>
+          <h2>Create profiles for kids</h2>
+        </span>
+        <span>
+          <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+        </span>
+        <img src="https://i.ibb.co/gZgRL7c/profile.png">
+      </div>
+    </div>
+  </div>
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <!-- 1st faq -->
+    <div class="faqbox freq">
+      <span>What is Netflix?</span>
+      <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg> -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+        role="img"
+        data-icon="PlusLarge"
+        aria-hidden="true"
+        class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <!-- 2nd faq -->
+    <div class="faqbox">
+      <span>How much does Netflix cost?</span>
+      <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg> -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+        role="img"
+        data-icon="PlusLarge"
+        aria-hidden="true"
+        class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <!-- 3rd faq -->
+    <div class="faqbox">
+      <span>Where can I watch?</span>
+      <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg> -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+        role="img"
+        data-icon="PlusLarge"
+        aria-hidden="true"
+        class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <!-- 4th faq -->
+    <div class="faqbox">
+      <span>How do I cancel?</span>
+      <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg> -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+        role="img"
+        data-icon="PlusLarge"
+        aria-hidden="true"
+        class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <!-- 5th faq -->
+    <div class="faqbox">
+      <span>What can I watch on Netflix?</span>
+      <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg> -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+        role="img"
+        data-icon="PlusLarge"
+        aria-hidden="true"
+        class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <!-- 6th faq -->
+    <div class="faqbox">
+      <span>Is Netflix good for kids?</span>
+      <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg> -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+        role="img"
+        data-icon="PlusLarge"
+        aria-hidden="true"
+        class="elj7tfr3 default-ltr-cache-1dpnjn e164gv2o4"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <div class="em">
+      <span class="email" style="color: white;"
+        >Ready to watch? Enter your email to create or restart your
+        membership.</span
+      >
+      <div class="place">
+        <input type="text" placeholder="Email address" />
+        <button class="btn btn-red">Get Started &gt;</button>
+      </div>
+    </div>
+  </section>
+  <div class="fo">
+    <span>Questions? Call<a> 000-800-919-1694</a></span>
+  </div>
+  <footer>
+    <div class="footer-text">
+      <a href="faq">FAQ</a>
+      <a href="faq">Investor Relations</a>
+      <a href="faq">Privacy</a>
+      <a href="faq">Speed Test</a>
+    </div>
+
+    <div class="footer-text">
+      <a href="faq">Help Centre</a>
+      <a href="faq"> Jobs</a>
+      <a href="faq">Cookie Preferences</a>
+      <a href="faq"> Legal Notices</a>
+    </div>
+
+    <div class="footer-text">
+      <a href="faq"> Account</a>
+      <a href="faq">Ways to Watch</a>
+      <a href="faq">Corporate Information</a>
+      <a href="faq">Only on Netflix</a>
+    </div>
+
+    <div class="footer-text">
+      <a href="faq"> Media Centre</a>
+      <a href="faq">Terms of Use</a>
+      <a href="faq">Contact Us</a>
+    </div>
+  </footer>
+  <div class="eng-last">
+    <button id="english" class="btn" >
+      <svg  style="width: 27px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="white" d="M0 128C0 92.7 28.7 64 64 64l192 0 48 0 16 0 256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64l-256 0-16 0-48 0L64 448c-35.3 0-64-28.7-64-64L0 128zm320 0l0 256 256 0 0-256-256 0zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1 73.6 0 8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276l-38 0 19-42.8zM448 164c11 0 20 9 20 20l0 4 44 0 16 0c11 0 20 9 20 20s-9 20-20 20l-2 0-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45L448 228l-72 0c-11 0-20-9-20-20s9-20 20-20l52 0 0-4c0-11 9-20 20-20z"/></svg>
+      <select name="menuChoice" onchange="displayPage(this)"  >
+        <option>English</option>
+        <option value="hi.html">हिन्दी</option>
+      </select></button>
+  </div>
+  <div class="eng-last1">
+    <span>Netflix India</span>
+  </div>
+
+
+</body>
+
+</html>
