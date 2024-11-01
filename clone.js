@@ -17,4 +17,3 @@ if(page!="")
     window.location=page;
 }
 }
-

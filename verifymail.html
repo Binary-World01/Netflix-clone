@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="x-icon" href="https://i.ibb.co/SvYM2q7/netflix1.png">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Netflix</title>
+        <meta name="description"
+          content="Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+          
+              You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        overflow-x: hidden;
+    }
+    .nav{
+        height: 90px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom:1px solid #e9e4e4;
+    }
+    .nav span img{
+        width: 200px;
+    }
+    .nav span{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .nav span a{
+        text-decoration: none;
+        color: #333;
+        font-size: 19px;
+        font-weight: 600;
+        font-family: sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    }
+    .verifymail{
+        height: 170px;
+    }
+    .verifymail .circle{
+       width: 50px;
+       height: 50px;
+        border-radius: 100%;
+        border: 3px solid rgb(221, 5, 5);
+        margin-left: 650px;
+        margin-top: 110px;
+    }
+    .verifymail .circle span svg{
+        height: 40px;
+        width: 40px;
+        margin-left: 4px;
+        margin-top: 5px;
+    }
+    .step{
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .step span{
+        font-family: sans-serif;
+        font-weight: 200;
+        font-size: 12px;
+        display: inline-block;
+        color: #333;
+    }
+    .email{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .email span{
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 600;
+        font-family: sans-serif;
+        width: 407px;
+    }
+    .email span p{
+        margin-left: 160px;
+    }
+    .emailadd{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    .moretext{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        font-family: sans-serif;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+    .moretext span {
+        width: 407px;
+    }
+    .Next button{
+        width: 462px;
+        height: 60px;
+        background-color: rgb(201, 198, 198);
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 30px;
+        display: inline-block;
+        margin-left: 460px;
+        margin-top: 30px;
+        border-radius: 6px;
+        border: none;
+    }
+
+    .Next button:hover{
+        background-color: rgb(223, 221, 221);
+    }
+    .empty{
+        height: 170px;
+    }
+    footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 70vw;
+	margin: auto;
+
+}
+.footer-text{
+    background-color: #f3f3f3;
+}
+.footer-text {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.footer-text a {
+	text-decoration: underline;
+	color: #333;
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.fo {
+	width: 70vw;
+	margin: auto;
+	margin-top: 60px;
+    background-color: #f3f3f3;
+}
+
+.fo span {
+	color: #333;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.fo span a {
+	color: #333;
+	font-size: 16px;
+	font-weight: 400;
+	padding-top: 10px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.eng-last {
+	width: 70vw;
+	margin: auto;
+	margin-top: 60px;
+}
+
+.btn1 {
+	width: 90px;
+	padding: 10px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.eng-last1 {
+	width: 70vw;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+.btn {
+	padding: 3px 8px;
+	font-weight: bolder;
+	color: white;
+	border: 1px solid rgb(145, 142, 142);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.btn select{
+    border: none;
+}
+#english {
+	position: relative;
+	z-index: 10;
+	margin-right: 5px;
+	padding: 4px;
+    margin-right: 15px;
+}
+.end{
+    background-color: #f3f3f3;
+}
+
+</style>
+
+
+      </head>
+      <script src="clone.js"></script>
+<body>
+    <nav class="nav">
+        <span><img  width="148px" src="https://i.ibb.co/FJ2qWHL/netflix.png" alt="Netflix" /></span>
+        <span><a href="index.html">Sign Out</a></span>
+    </nav>
+    <main>
+        <div class="verifymail">
+        <div class="circle">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" color="rgb(221, 5, 5)" fill="red" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="ShieldCheckmarkStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.4061 1.08619C12.1476 0.971271 11.8524 0.971271 11.5939 1.08619L1.59387 5.53063C1.21945 5.69704 0.984428 6.07501 1.0008 6.48441C1.11201 9.2645 1.36208 12.7774 2.80051 15.8916C4.26941 19.0717 6.95244 21.7837 11.7603 22.9708C11.9177 23.0097 12.0823 23.0097 12.2397 22.9708C17.0476 21.7837 19.7306 19.0717 21.1995 15.8916C22.6379 12.7774 22.888 9.2645 22.9992 6.48441C23.0156 6.07501 22.7806 5.69704 22.4061 5.53063L12.4061 1.08619ZM4.61617 15.0529C3.46121 12.5525 3.15696 9.68464 3.02915 7.08136L12 3.09432L20.9709 7.08136C20.8431 9.68464 20.5388 12.5525 19.3838 15.0529C18.1819 17.6551 16.0369 19.9059 12 20.968C7.96307 19.9059 5.81813 17.6551 4.61617 15.0529ZM11.7071 15.7071L17.7071 9.70711L16.2929 8.29289L11 13.5858L8.70711 11.2929L7.29289 12.7071L10.2929 15.7071L11 16.4142L11.7071 15.7071Z" fill="currentColor"></path></svg>
+            </span>
+        </div>
+        </div>
+        <div class="step">
+            <span>STEP <b>2</b> OF <b>4</b></span>
+        </div>
+        <div class="email">
+            <span>Great, now let us verify your <p>email</p></span>
+        </div>
+        <div class="emailadd">
+            Click the link we sent to verify.
+        </div>
+        <div class="moretext">
+            <span>
+                Verifying your email will improve account security and help you receive important Netflix communications.
+            </span>
+        </div>
+        <div class="Next">
+            <a href="step3.html">
+                <button >
+                    Skip
+                </button>
+            </a>
+        </div>
+        <div class="empty"></div>
+    </main>
+    <div class="end">
+    <div class="fo">
+        <span style=" background-color: #f3f3f3;">Questions? Call<a style=" background-color: #f3f3f3;"> 000-800-919-1694</a></span>
+      </div>
+      <footer style=" background-color: #f3f3f3;">
+        <div class="footer-text" style=" background-color: #f3f3f3;">
+          <a href="faq"style=" background-color: #f3f3f3;">FAQ</a>
+          <a href="faq" style=" background-color: #f3f3f3;">Cookie Preferences</a>
+        </div>
+    
+        <div class="footer-text" style=" background-color: #f3f3f3;">
+          <a href="faq" style=" background-color: #f3f3f3;">Help Centre</a>
+          <a href="faq" style=" background-color: #f3f3f3;">Corporate Information</a>
+        </div>
+    
+        <div class="footer-text" style=" background-color: #f3f3f3;">
+          <a href="faq" style=" background-color: #f3f3f3;"> Terms of use</a>
+        </div>
+    
+        <div class="footer-text" style=" background-color: #f3f3f3;">
+          <a href="faq" style=" background-color: #f3f3f3;"> Privacy</a>
+        </div>
+      </footer>
+      <div class="eng-last" style=" background-color: #f3f3f3;">
+        <button id="english" class="btn" >
+          <svg  style="width: 27px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="gray" d="M0 128C0 92.7 28.7 64 64 64l192 0 48 0 16 0 256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64l-256 0-16 0-48 0L64 448c-35.3 0-64-28.7-64-64L0 128zm320 0l0 256 256 0 0-256-256 0zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1 73.6 0 8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276l-38 0 19-42.8zM448 164c11 0 20 9 20 20l0 4 44 0 16 0c11 0 20 9 20 20s-9 20-20 20l-2 0-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45L448 228l-72 0c-11 0-20-9-20-20s9-20 20-20l52 0 0-4c0-11 9-20 20-20z"/></svg>
+          <select name="menuChoice" onchange="displayPage(this)"  >
+            <option>English</option>
+            <option value="hi.html">हिन्दी</option>
+          </select></button>
+      </div>
+      <div class="eng-last1" style=" background-color: #f3f3f3;">
+        <span style=" background-color: #f3f3f3;">Netflix India</span>
+      </div>
+    </div>
+</body>
+</html>
